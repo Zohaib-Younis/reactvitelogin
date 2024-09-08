@@ -1,0 +1,103 @@
+/* Ensure the body and html cover the entire viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: lightgreen; /* Light green background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Login box styles */
+.loginBox {
+    background-color: white; /* White background for the box */
+    padding: 20px; /* Padding around the entire box */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Slight shadow for better visibility */
+    text-align: center;
+    max-width: 400px; /* Limit the maximum width */
+    width: 100%; /* Full width with max limit */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+/* Input styles */
+input {
+    width: calc(100% - 40px); /* Full width minus padding */
+    padding: 20px; /* Padding inside the input box */
+    margin-bottom: 20px; /* Space between input boxes */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+/* Button styles */
+button {
+    background-color: #4CAF50; /* Green background for the button */
+    color: white;
+    border: none;
+    width: calc(100% - 0px);
+    padding: 20px; /* Padding inside the button */
+    text-align: center;
+    text-decoration: none;
+    display: block; /* Make button behave as a block element */
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px; /* Match the width of the input boxes */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    margin-bottom: 10px; /* Space below the button */
+    background-color: #4CAF50;
+}
+
+/* Remove hover effect */
+button:hover {
+    background-color: #4CAF50; /* Keep the background color same on hover */
+}
+
+/* Signup message styles */
+.signupMessage {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.signupMessage a {
+    color: #4CAF50; /* Match the green color of the button */
+    text-decoration: none;
+    font-weight: bold; /* Optional: make the link text bold for emphasis */
+}
+
+.signupMessage a:hover {
+    text-decoration: underline; /* Underline the link on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .loginBox {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    input {
+        padding: 15px; /* Adjust padding inside input boxes */
+        margin-bottom: 15px; /* Adjust space between input boxes */
+    }
+
+    button {
+        padding: 15px; /* Adjust padding inside the button */
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .signupMessage {
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+}
